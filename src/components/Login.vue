@@ -56,7 +56,7 @@
                         password
                     };
 
-                    axios.post('http://localhost:5000/api/v1/login', credentials, {headers: headers})
+                    axios.post('https://iot-health-monitoring-backend.herokuapp.com/api/v1/login', credentials, {headers: headers})
                         .then(response => {
                             let token = response.data.token;
 

@@ -131,7 +131,7 @@
                 };
 
                 if(this.patientID !== ''){
-                    axios.get('http://localhost:5000/api/v1/health-records', configHeaders)
+                    axios.get('https://iot-health-monitoring-backend.herokuapp.com/api/v1/health-records', configHeaders)
                         .then(response => {
                             this.retrievedOneData = true;
                             this.allPatientHealthData = response.data.data;
@@ -161,7 +161,7 @@
                     }
                 };
 
-                axios.get('http://localhost:5000/api/v1/health-records', configHeaders)
+                axios.get('https://iot-health-monitoring-backend.herokuapp.com/api/v1/health-records', configHeaders)
                     .then(response => {
                         this.retrievedOneData = false;
                         this.allPatientHealthData = response.data.data;
